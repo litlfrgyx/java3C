@@ -5,22 +5,25 @@ public void vlajkaKostarika(int pocetKrokov, double sirka, double vyska)
     double natocenie = this.getDirection();
     for(int i = 0; i < pocetKrokov; i++)
     	{
-    	 if(this.getY() > startY - vyska/6
-    	 || this.getY() < startY + vyska/6)
-    	 	{
+    	if(this.getY() > startY - vyska/6
+    	|| this.getY() < startY + vyska/6)
+    		{
      	 	this.setPenColor(Color.red);
     	 	}
-    	 //dolnepruhy
-    	 if(this.getY() > startY + vyska/6
-    	 || this.getY() < startY - vyska/3)
-    	 	{
-     	 	this.setPenColor(Color.white);
-    	 	}
-    	 if(this.getY() > startY + vyska/3)
-    	 	{
+    	
+    	 //dolné pruhy-------------------------
+    	
+    	if(this.getY() > startY + vyska/6)
+    		{
+    		this.setPenColor(Color.white);
+  	 		}
+    	if(this.getY() > startY + vyska/3)
+	 		{
     		this.setPenColor(Color.blue);
-    	 	}
-    	 //hornepruhy
+	 		}
+    	
+    	 //horné pruhy------------------------
+    	
     	 if(this.getY() < startY - vyska/6)
      	 	{
      	 	this.setPenColor(Color.white);
